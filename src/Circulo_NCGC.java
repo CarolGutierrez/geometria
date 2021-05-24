@@ -7,6 +7,9 @@ public class Circulo_NCGC extends FiguraGeometrica_NCGC {
 	public Circulo_NCGC(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(radio<0) {
+			radio= radio*1;
+		}
 	}
 
 	@Override
